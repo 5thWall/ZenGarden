@@ -1,0 +1,6 @@
+@mixin tag-wrap($name) {
+  &:before { content: "<#{$name}>"; }
+  &:after { content: "</#{$name}>"; }
+}
+
+h3 { @include tag-wrap("h3"); }
