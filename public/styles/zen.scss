@@ -3,4 +3,6 @@
   &:after { content: "</#{$name}>"; }
 }
 
+h1 { @include tag-wrap("h1"); }
+h2 { @include tag-wrap("h2"); }
 h3 { @include tag-wrap("h3"); }
