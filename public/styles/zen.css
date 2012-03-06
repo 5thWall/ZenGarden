@@ -1,7 +1,9 @@
-h1:before {
-  content: "<h1>"; }
-h1:after {
-  content: "</h1>"; }
+h1 {
+  text-rendering: optimizeLegibility; }
+  h1:before {
+    content: "<h1>"; }
+  h1:after {
+    content: "</h1>"; }
 
 h2:before {
   content: "<h2>"; }
@@ -12,3 +14,28 @@ h3:before {
   content: "<h3>"; }
 h3:after {
   content: "</h3>"; }
+
+span:before {
+  content: "<span>"; }
+span:after {
+  content: "</span>"; }
+
+div:before {
+  content: "<div>"; }
+div:after {
+  content: "</div>"; }
+
+p:before {
+  content: "<p>"; }
+p:after {
+  content: "</p>"; }
+
+ul:before {
+  content: "<ul>"; }
+ul:after {
+  content: "</ul>"; }
+
+li:before {
+  content: "<li>"; }
+li:after {
+  content: "</li>"; }

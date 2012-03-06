@@ -3,6 +3,15 @@
   &:after { content: "</#{$name}>"; }
 }
 
-h1 { @include tag-wrap("h1"); }
+h1 { 
+  @include tag-wrap("h1");
+  text-rendering: optimizeLegibility;
+}
 h2 { @include tag-wrap("h2"); }
 h3 { @include tag-wrap("h3"); }
+
+span { @include tag-wrap("span"); }
+div { @include tag-wrap("div"); }
+p { @include tag-wrap("p"); }
+ul { @include tag-wrap("ul"); }
+li { @include tag-wrap("li"); }
