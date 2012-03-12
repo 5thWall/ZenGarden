@@ -1,12 +1,48 @@
+$background: hsl(210, 98%, 50%);
+$hilight1: hsl(220, 100%, 90%);
+$hilight2: hsl(227, 50%, 70%);
+$hlstart: 100px;
+$hl1width: 130px;
+$hl2wibth: 80px;
+
+body {
+  background: $background
+}
+
+#container div {
+  background: white;
+  width: 720px;
+  left: auto;
+  right: auto;
+}
+
+#extraDiv1 {
+  background: $hilight1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: $hlstart;
+  width: $hl1width;
+  z-index: -1;
+}
+
+#extraDiv2 {
+  background: $hilight2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: $hlstart + $hl1width;
+  width: $hl2wibth;
+  z-index: -1;
+}
+
 @mixin tag-wrap($name) {
   &:before { content: "<#{$name}>"; }
   &:after { content: "</#{$name}>"; }
 }
 
-h1 { 
-  @include tag-wrap("h1");
-  text-rendering: optimizeLegibility;
-}
+/*
+h1 { @include tag-wrap("h1"); }
 h2 { @include tag-wrap("h2"); }
 h3 { @include tag-wrap("h3"); }
 
@@ -15,3 +51,4 @@ div { @include tag-wrap("div"); }
 p { @include tag-wrap("p"); }
 ul { @include tag-wrap("ul"); }
 li { @include tag-wrap("li"); }
+a { @include tag-wrap("a"); } */

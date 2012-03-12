@@ -1,41 +1,38 @@
-h1 {
-  text-rendering: optimizeLegibility; }
-  h1:before {
-    content: "<h1>"; }
-  h1:after {
-    content: "</h1>"; }
+body {
+  background: #037ffc; }
 
-h2:before {
-  content: "<h2>"; }
-h2:after {
-  content: "</h2>"; }
+#container div {
+  background: white;
+  width: 720px;
+  left: auto;
+  right: auto; }
 
-h3:before {
-  content: "<h3>"; }
-h3:after {
-  content: "</h3>"; }
+#extraDiv1 {
+  background: #ccddff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+  width: 130px;
+  z-index: -1; }
 
-span:before {
-  content: "<span>"; }
-span:after {
-  content: "</span>"; }
+#extraDiv2 {
+  background: #8c9dd9;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 230px;
+  width: 80px;
+  z-index: -1; }
 
-div:before {
-  content: "<div>"; }
-div:after {
-  content: "</div>"; }
+/*
+h1 { @include tag-wrap("h1"); }
+h2 { @include tag-wrap("h2"); }
+h3 { @include tag-wrap("h3"); }
 
-p:before {
-  content: "<p>"; }
-p:after {
-  content: "</p>"; }
-
-ul:before {
-  content: "<ul>"; }
-ul:after {
-  content: "</ul>"; }
-
-li:before {
-  content: "<li>"; }
-li:after {
-  content: "</li>"; }
+span { @include tag-wrap("span"); }
+div { @include tag-wrap("div"); }
+p { @include tag-wrap("p"); }
+ul { @include tag-wrap("ul"); }
+li { @include tag-wrap("li"); }
+a { @include tag-wrap("a"); } */
