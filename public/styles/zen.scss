@@ -1,9 +1,10 @@
 $background: hsl(210, 98%, 50%);
 $hilight1: hsl(220, 100%, 90%);
 $hilight2: hsl(227, 50%, 70%);
-$hlstart: 100px;
+$divstart: 15%;
+$hlstart: $divstart + 10%;
 $hl1width: 130px;
-$hl2wibth: 80px;
+$hl2width: 80px;
 
 body {
   background: $background
@@ -12,8 +13,8 @@ body {
 #container div {
   background: white;
   width: 720px;
-  left: auto;
-  right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #extraDiv1 {
@@ -21,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: $hlstart;
+  margin-left: $hlstart;
   width: $hl1width;
   z-index: -1;
 }
@@ -31,9 +32,9 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: $hlstart + $hl1width;
-  width: $hl2wibth;
-  z-index: -1;
+  margin-left: $hlstart;
+  width: $hl1width + $hl2width;
+  z-index: -2;
 }
 
 @mixin tag-wrap($name) {

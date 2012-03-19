@@ -4,15 +4,15 @@ body {
 #container div {
   background: white;
   width: 720px;
-  left: auto;
-  right: auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 #extraDiv1 {
   background: #ccddff;
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 100px;
+  margin-left: 25%;
   width: 130px;
   z-index: -1; }
 
@@ -21,9 +21,9 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 230px;
-  width: 80px;
-  z-index: -1; }
+  margin-left: 25%;
+  width: 210px;
+  z-index: -2; }
 
 /*
 h1 { @include tag-wrap("h1"); }
