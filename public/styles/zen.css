@@ -1,3 +1,18 @@
+a, body, div, h1, h2, h3, li, span, ul {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+html, body {
+  height: 100%; }
+
+ul {
+  list-style: none; }
+
+li {
+  display: list-item; }
+
 body {
   background: #037ffc; }
 
@@ -15,14 +30,17 @@ body {
   float: left; }
 
 #supportingText div {
-  background: white; }
+  background: white;
+  padding: 0 10px;
+  border-radius: 0.5em 2em 0.5em 2em; }
 
 #linkList {
   background: white;
   display: inline;
   float: left;
   margin-left: 0;
-  width: 330px;
+  margin-right: 10px;
+  width: 320px;
   margin-bottom: 20px; }
 
 #extraDiv1 {

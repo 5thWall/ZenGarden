@@ -22,6 +22,8 @@ body {
 
 #supportingText div {
   background: white;
+  padding: 0 10px;
+  border-radius: 0.5em 2em 0.5em 2em;
 }
 
 #linkList {
@@ -29,7 +31,8 @@ body {
   display: inline;
   float: left;
   margin-left: 0;
-  width: 330px;
+  margin-right: 10px;
+  width: 320px;
   margin-bottom: 20px;
 }
 
