@@ -1,0 +1,19 @@
+@mixin tag-wrap($name) {
+  &:before { content: "<#{$name}>"; }
+  &:after { content: "</#{$name}>"; }
+}
+
+@mixin background-gradient($pos, $bg1, $bg2) {
+  background-color: $bg1;
+  background-image: -webkit-linear-gradient($pos, $bg1, $bg2);
+  background-image:    -moz-linear-gradient($pos, $bg1, $bg2);
+  background-image:     -ms-linear-gradient($pos, $bg1, $bg2);
+  background-image:      -o-linear-gradient($pos, $bg1, $bg2);
+  background-image:         linear-gradient($pos, $bg1, $bg2);
+}
+
+@mixin box-shadow-all ($t, $l, $b, $r, $c){
+  -webkit-box-shadow: $t $l $b $r $c; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: $t $l $b $r $c; /* FF3.5 - 3.6 */
+          box-shadow: $t $l $b $r $c; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}

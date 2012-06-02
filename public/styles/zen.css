@@ -14,7 +14,13 @@ li {
   display: list-item; }
 
 body {
-  background: #037ffc; }
+  background-color: #037ffc;
+  background-image: -webkit-linear-gradient(120deg, #037ffc, #ccddff);
+  background-image: -moz-linear-gradient(120deg, #037ffc, #ccddff);
+  background-image: -ms-linear-gradient(120deg, #037ffc, #ccddff);
+  background-image: -o-linear-gradient(120deg, #037ffc, #ccddff);
+  background-image: linear-gradient(120deg, #037ffc, #ccddff);
+  background-attachment: fixed; }
 
 #container {
   width: 960px;
@@ -32,7 +38,13 @@ body {
 #supportingText div {
   background: white;
   padding: 0 10px;
-  border-radius: 0.5em 2em 0.5em 2em; }
+  border-radius: 0.5em 2em 0.5em 2em;
+  -webkit-box-shadow: 0px 0px 4px 0px #666666;
+  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0px 0px 4px 0px #666666;
+  /* FF3.5 - 3.6 */
+  box-shadow: 0px 0px 4px 0px #666666;
+  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ }
 
 #linkList {
   background: white;
@@ -41,10 +53,16 @@ body {
   margin-left: 0;
   margin-right: 10px;
   width: 320px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 2em 0.5em 2em 0.5em; }
 
 #extraDiv1 {
-  background: #ccddff;
+  background-color: #ccddff;
+  background-image: -webkit-linear-gradient(left, #ccddff, #8c9dd9);
+  background-image: -moz-linear-gradient(left, #ccddff, #8c9dd9);
+  background-image: -ms-linear-gradient(left, #ccddff, #8c9dd9);
+  background-image: -o-linear-gradient(left, #ccddff, #8c9dd9);
+  background-image: linear-gradient(left, #ccddff, #8c9dd9);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -61,12 +79,22 @@ body {
   width: 210px;
   z-index: -2; }
 
-/*
-h1 { @include tag-wrap("h1"); }
-h2 { @include tag-wrap("h2"); }
-h3 { @include tag-wrap("h3"); }
+h1:before {
+  content: "<h1>"; }
+h1:after {
+  content: "</h1>"; }
 
-span { @include tag-wrap("span"); }
+h2:before {
+  content: "<h2>"; }
+h2:after {
+  content: "</h2>"; }
+
+h3:before {
+  content: "<h3>"; }
+h3:after {
+  content: "</h3>"; }
+
+/*span { @include tag-wrap("span"); }
 div { @include tag-wrap("div"); }
 p { @include tag-wrap("p"); }
 ul { @include tag-wrap("ul"); }
