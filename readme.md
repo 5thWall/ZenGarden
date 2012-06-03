@@ -2,5 +2,5 @@
 
 This is a work project to learn CSS3 using the [CSS ZenGarden](http://csszengarden.com) html.
 
-## `{less}` and/or `Sass`
-For this project I'm planning on using [`{less}`](http://lesscss.org) and/or [Sass](http://sass-lang.com), which I guess are CSS preprocessors.
+## `Sass`
+For this project I'm using [Sass](http://sass-lang.com), which is a CSS preprocessor.
