@@ -150,11 +150,16 @@ h3 {
   #supportingText > div:last-child {
     width: 960px;
     margin-bottom: 0px;
+    text-align: center;
+    height: 30px;
     -webkit-border-radius: 2em 2em 0 0;
     -moz-border-radius: 2em 2em 0 0;
     -ms-border-radius: 2em 2em 0 0;
     -o-border-radius: 2em 2em 0 0;
     border-radius: 2em 2em 0 0; }
+    #supportingText > div:last-child > a {
+      font-size: 18px;
+      margin-bottom: 20px; }
 
 #linkList {
   display: inline;
