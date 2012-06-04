@@ -207,11 +207,21 @@ h3 {
 }
 
 #extraDiv1 {
-  @include background-gradient(left, $background, $hilight2);
+  @include background-gradient(left, $hilight1, $hilight2);
   position: fixed;
   top: 0;
   bottom: 0;
   margin-left: $hlstart;
   width: $hl1width;
   z-index: -1;
+}
+
+#extraDiv2 {
+  background: $hilight2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-left: $hlstart;
+  width: $hl1width + $hl2width;
+  z-index: -2;
 }
