@@ -229,15 +229,24 @@ h3 {
   content: "\f02e"; }
 
 #extraDiv1 {
-  background-color: #037ffc;
-  background-image: -webkit-linear-gradient(left, #037ffc, #9accfe);
-  background-image: -moz-linear-gradient(left, #037ffc, #9accfe);
-  background-image: -ms-linear-gradient(left, #037ffc, #9accfe);
-  background-image: -o-linear-gradient(left, #037ffc, #9accfe);
-  background-image: linear-gradient(left, #037ffc, #9accfe);
+  background-color: #fc8003;
+  background-image: -webkit-linear-gradient(left, #fc8003, #9accfe);
+  background-image: -moz-linear-gradient(left, #fc8003, #9accfe);
+  background-image: -ms-linear-gradient(left, #fc8003, #9accfe);
+  background-image: -o-linear-gradient(left, #fc8003, #9accfe);
+  background-image: linear-gradient(left, #fc8003, #9accfe);
   position: fixed;
   top: 0;
   bottom: 0;
   margin-left: 12%;
   width: 130px;
   z-index: -1; }
+
+#extraDiv2 {
+  background: #9accfe;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-left: 12%;
+  width: 210px;
+  z-index: -2; }
