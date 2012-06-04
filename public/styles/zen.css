@@ -86,8 +86,9 @@ h3 {
   margin-right: 60px;
   z-index: 10;
   background: #0266ca;
+  font-size: 14px;
   color: white;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 20px;
   -webkit-border-radius: 0 0 2em 2em;
   -moz-border-radius: 0 0 2em 2em;
   -ms-border-radius: 0 0 2em 2em;
@@ -98,7 +99,36 @@ h3 {
   -moz-box-shadow: 5px 5px 10px 0px #666666;
   /* FF3.5 - 3.6 */
   box-shadow: 5px 5px 10px 0px #666666;
-  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ }
+  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+  -webkit-transition: height 2s ease 0.5s;
+  -moz-transition: height 2s ease 0.5s;
+  -ms-transition: height 2s ease 0.5s;
+  -o-transition: height 2s ease 0.5s;
+  transition: height 2s ease 0.5s;
+  height: 65px;
+  overflow: hidden; }
+  #quickSummary:hover {
+    -webkit-transition: height 2s ease 0.5s;
+    -moz-transition: height 2s ease 0.5s;
+    -ms-transition: height 2s ease 0.5s;
+    -o-transition: height 2s ease 0.5s;
+    transition: height 2s ease 0.5s;
+    height: 175px; }
+  #quickSummary > .p2 {
+    font-size: 26px;
+    display: block;
+    float: left;
+    width: 400px;
+    margin-left: 15px; }
+    #quickSummary > .p2:before {
+      font-family: FontAwesome;
+      font-size: 50px;
+      content: "\f019";
+      display: block;
+      float: left;
+      width: 65px;
+      height: 50px;
+      line-height: 60px; }
 
 #preamble {
   padding: 10px 20px 1px 20px; }

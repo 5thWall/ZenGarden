@@ -26,6 +26,14 @@
           border-radius: $tl $tr $bl $br;
 }
 
+@mixin transition-all($p, $du, $t, $de) {
+  -webkit-transition: $p $du $t $de;
+     -moz-transition: $p $du $t $de;
+      -ms-transition: $p $du $t $de;
+       -o-transition: $p $du $t $de;
+          transition: $p $du $t $de;
+}
+
 @mixin icon ($code) {
   &:before {
     font-family: FontAwesome;
