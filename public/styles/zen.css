@@ -111,17 +111,12 @@ body {
   width: 210px;
   z-index: -2; }
 
-h1:before {
-  content: "<h1>"; }
-h1:after {
-  content: "</h1>"; }
-
-h2:before {
-  content: "<h2>"; }
-h2:after {
-  content: "</h2>"; }
-
-h3:before {
-  content: "<h3>"; }
-h3:after {
-  content: "</h3>"; }
+#lresources > ul > li {
+  display: block; }
+  #lresources > ul > li:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f02e"; }

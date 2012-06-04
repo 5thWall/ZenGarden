@@ -80,3 +80,8 @@ body {
   width: $hl1width + $hl2width;
   z-index: -2;
 }
+
+#lresources>ul>li {
+  display: block;
+  @include icon("\f02e");
+}
