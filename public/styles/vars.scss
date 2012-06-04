@@ -8,4 +8,12 @@ $hl2width: 80px;
 $mainWidth: 960px;
 $gutterWidth: 10px;
 $col1Width: 690px;
-$col2Width: $mainWidth - (2*$gutterWidth) - $col1Width
+$col2Width: $mainWidth - (3 * $gutterWidth) - $col1Width - 1;
+$h3Size: 16px;
+$h2Size: $h3Size + 10px;
+$h1Size: $h2Size + 10px;
+$headerFont: Helvetica, sans-serif;
+
+$summaryWidth: 450px;
+$summaryLeft: 450px;
+$summaryRight: $mainWidth - $summaryWidth - $summaryLeft;

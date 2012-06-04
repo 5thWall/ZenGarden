@@ -11,15 +11,67 @@
     font-style: normal;
 }
 
+.section-div {
+  background: white;
+  margin-bottom: 2 * $gutterWidth;
+  @include border-radius-all(1em, 2em, 1em, 2em);
+  @include box-shadow-all(5px, 5px, 10px, 0px, #666);
+}
+
 body {
   @include background-gradient(120deg, $background, $hilight1);
   background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  font-family: $headerFont;
+}
+
+h1 {
+  font-size: $h1Size;
+}
+
+h2 {
+  font-size: $h2Size;
+}
+
+h3 {
+  font-size: $h2Size;
 }
 
 #container {
   width: $mainWidth;
   margin-left: auto;
   margin-right: auto;
+}
+
+#pageHeader {
+  background: white;
+  padding: 10px 1px 1px 20px;
+  margin-top: 0px;
+  margin-bottom: 2 * $gutterWidth;
+  @include border-radius-all(0, 0, 2em, 2em);
+  @include box-shadow-all(5px, 5px, 10px, 0px, #666);
+}
+
+#quickSummary {
+  position: fixed;
+  top: 0;
+  width: $summaryWidth;
+  margin-left: $summaryLeft;
+  margin-right: $summaryRight;
+  z-index: 10;
+
+  background: darken($background, 10%);
+  color: white;
+  padding: 0 0 0 15px;
+  @include border-radius-all(0, 0, 2em, 2em);
+  @include box-shadow-all(5px, 5px, 10px, 0px, #666);
+}
+
+#preamble {
+  @extend .section-div;
+  padding: 10px 20px 1px 20px;
 }
 
 #supportingText {
@@ -32,11 +84,8 @@ body {
 }
 
 #supportingText>div {
-  background: white;
+  @extend .section-div;
   padding: 10px 1px 1px 20px;
-  margin-bottom: 2 * $gutterWidth;
-  @include border-radius-all(0.5em, 2em, 0.5em, 2em);
-  @include box-shadow-all(5px, 5px, 10px, 0px, #666);
 
   >* {
     width: $col1Width - (3 * $gutterWidth);
@@ -50,15 +99,35 @@ body {
 }
 
 #linkList {
-  background: white;
+  @extend .section-div;
   display: inline;
   float: left;
   margin-left: 0;
-  margin-right: $gutterWidth;
   width: $col2Width;
-  margin-bottom: 20px;
-  @include border-radius-all(2em, 0.5em, 2em, 0.5em);
-  @include box-shadow-all(5px, 5px, 10px, 0px, #666)
+}
+
+#linkList2 {
+  padding: 10px 1px 10px 20px;
+
+  &:before {
+    font-size: $h2Size;
+    font-weight: bold;
+    font-family: $headerFont;
+    content: "Links";
+  }
+
+  >div {
+    width: $col2Width - (3 * $gutterWidth);
+    margin-bottom: 15px;
+
+    &:first-child {
+      margin-top: 15px;
+    }
+  }
+
+  h3 {
+    font-size: $h3Size;
+  }
 }
 
 #extraDiv1 {

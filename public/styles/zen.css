@@ -20,6 +20,21 @@ li {
   font-weight: normal;
   font-style: normal; }
 
+.section-div, #preamble, #supportingText > div, #linkList {
+  background: white;
+  margin-bottom: 20px;
+  -webkit-border-radius: 1em 2em 1em 2em;
+  -moz-border-radius: 1em 2em 1em 2em;
+  -ms-border-radius: 1em 2em 1em 2em;
+  -o-border-radius: 1em 2em 1em 2em;
+  border-radius: 1em 2em 1em 2em;
+  -webkit-box-shadow: 5px 5px 10px 0px #666666;
+  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 5px 5px 10px 0px #666666;
+  /* FF3.5 - 3.6 */
+  box-shadow: 5px 5px 10px 0px #666666;
+  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ }
+
 body {
   background-color: #037ffc;
   background-image: -webkit-linear-gradient(120deg, #037ffc, #ccddff);
@@ -29,10 +44,64 @@ body {
   background-image: linear-gradient(120deg, #037ffc, #ccddff);
   background-attachment: fixed; }
 
+h1, h2, h3 {
+  font-family: Helvetica, sans-serif; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 26px; }
+
 #container {
   width: 960px;
   margin-left: auto;
   margin-right: auto; }
+
+#pageHeader {
+  background: white;
+  padding: 10px 1px 1px 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 0 0 2em 2em;
+  -moz-border-radius: 0 0 2em 2em;
+  -ms-border-radius: 0 0 2em 2em;
+  -o-border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2em 2em;
+  -webkit-box-shadow: 5px 5px 10px 0px #666666;
+  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 5px 5px 10px 0px #666666;
+  /* FF3.5 - 3.6 */
+  box-shadow: 5px 5px 10px 0px #666666;
+  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ }
+
+#quickSummary {
+  position: fixed;
+  top: 0;
+  width: 450px;
+  margin-left: 450px;
+  margin-right: 60px;
+  z-index: 10;
+  background: #0266ca;
+  color: white;
+  padding: 0 0 0 15px;
+  -webkit-border-radius: 0 0 2em 2em;
+  -moz-border-radius: 0 0 2em 2em;
+  -ms-border-radius: 0 0 2em 2em;
+  -o-border-radius: 0 0 2em 2em;
+  border-radius: 0 0 2em 2em;
+  -webkit-box-shadow: 5px 5px 10px 0px #666666;
+  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 5px 5px 10px 0px #666666;
+  /* FF3.5 - 3.6 */
+  box-shadow: 5px 5px 10px 0px #666666;
+  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ }
+
+#preamble {
+  padding: 10px 20px 1px 20px; }
 
 #supportingText {
   display: inline;
@@ -43,20 +112,7 @@ body {
   float: left; }
 
 #supportingText > div {
-  background: white;
-  padding: 10px 1px 1px 20px;
-  margin-bottom: 20px;
-  -webkit-border-radius: 0.5em 2em 0.5em 2em;
-  -moz-border-radius: 0.5em 2em 0.5em 2em;
-  -ms-border-radius: 0.5em 2em 0.5em 2em;
-  -o-border-radius: 0.5em 2em 0.5em 2em;
-  border-radius: 0.5em 2em 0.5em 2em;
-  -webkit-box-shadow: 5px 5px 10px 0px #666666;
-  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 5px 5px 10px 0px #666666;
-  /* FF3.5 - 3.6 */
-  box-shadow: 5px 5px 10px 0px #666666;
-  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ }
+  padding: 10px 1px 1px 20px; }
   #supportingText > div > * {
     width: 660px; }
   #supportingText > div:last-child {
@@ -69,24 +125,25 @@ body {
     border-radius: 2em 2em 0 0; }
 
 #linkList {
-  background: white;
   display: inline;
   float: left;
   margin-left: 0;
-  margin-right: 10px;
-  width: 250px;
-  margin-bottom: 20px;
-  -webkit-border-radius: 2em 0.5em 2em 0.5em;
-  -moz-border-radius: 2em 0.5em 2em 0.5em;
-  -ms-border-radius: 2em 0.5em 2em 0.5em;
-  -o-border-radius: 2em 0.5em 2em 0.5em;
-  border-radius: 2em 0.5em 2em 0.5em;
-  -webkit-box-shadow: 5px 5px 10px 0px #666666;
-  /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow: 5px 5px 10px 0px #666666;
-  /* FF3.5 - 3.6 */
-  box-shadow: 5px 5px 10px 0px #666666;
-  /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ }
+  width: 239px; }
+
+#linkList2 {
+  padding: 10px 1px 10px 20px; }
+  #linkList2:before {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    content: "Links"; }
+  #linkList2 > div {
+    width: 209px;
+    margin-bottom: 15px; }
+    #linkList2 > div:first-child {
+      margin-top: 15px; }
+  #linkList2 h3 {
+    font-size: 16px; }
 
 #extraDiv1 {
   background-color: #ccddff;
