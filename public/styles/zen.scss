@@ -16,17 +16,28 @@ body {
 #supportingText {
   display: inline;
   float: left;
-  width: 620px;
+  width: $col1Width;
   margin-left: 0;
-  margin-right: 10px;
+  margin-right: $gutterWidth;
   float: left;
 }
 
-#supportingText div {
+#supportingText>div {
   background: white;
-  padding: 0 10px;
-  border-radius: 0.5em 2em 0.5em 2em;
-  @include box-shadow-all(0px, 0px, 4px, 0px, #666);
+  padding: 10px 1px 1px 20px;
+  margin-bottom: 2 * $gutterWidth;
+  @include border-radius-all(0.5em, 2em, 0.5em, 2em);
+  @include box-shadow-all(5px, 5px, 10px, 0px, #666);
+
+  >* {
+    width: $col1Width - (3 * $gutterWidth);
+  }
+
+  &:last-child {
+    width: $mainWidth;
+    margin-bottom: 0px;
+    @include border-radius-all(2em, 2em, 0, 0);
+  }
 }
 
 #linkList {
@@ -34,10 +45,11 @@ body {
   display: inline;
   float: left;
   margin-left: 0;
-  margin-right: 10px;
-  width: 320px;
+  margin-right: $gutterWidth;
+  width: $col2Width;
   margin-bottom: 20px;
-  border-radius: 2em 0.5em 2em 0.5em;
+  @include border-radius-all(2em, 0.5em, 2em, 0.5em);
+  @include box-shadow-all(5px, 5px, 10px, 0px, #666)
 }
 
 #extraDiv1 {
@@ -65,9 +77,9 @@ h1 { @include tag-wrap("h1"); }
 h2 { @include tag-wrap("h2"); }
 h3 { @include tag-wrap("h3"); }
 
-/*span { @include tag-wrap("span"); }
-div { @include tag-wrap("div"); }
-p { @include tag-wrap("p"); }
-ul { @include tag-wrap("ul"); }
-li { @include tag-wrap("li"); }
-a { @include tag-wrap("a"); } */
+// span { @include tag-wrap("span"); }
+// div { @include tag-wrap("div"); }
+// p { @include tag-wrap("p"); }
+// ul { @include tag-wrap("ul"); }
+// li { @include tag-wrap("li"); }
+// a { @include tag-wrap("a"); }
