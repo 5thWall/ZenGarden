@@ -63,15 +63,15 @@ h3 {
   z-index: 10;
 
   background: darken($background, 10%);
-  font-size: 14px;
+  font-size: 16px;
   color: white;
-  padding: 0 0 0 20px;
+  padding: 0 10px 0 20px;
   @include border-radius-all(0, 0, 2em, 2em);
   @include box-shadow-all(5px, 5px, 10px, 0px, #666);
 
   @include transition-all(height, 2s, ease, 0.5s);
 
-  height: 65px;
+  height: 85px;
   overflow: hidden;
 
   &:hover{
@@ -81,10 +81,12 @@ h3 {
 
   >.p2 {
     font-size: $h2Size;
+    font-family: $headerFont;
     display: block;
     float: left;
     width: 400px;
     margin-left: 15px;
+    margin-top: 10px;
 
     &:before {
       font-family: FontAwesome;
@@ -157,7 +159,44 @@ h3 {
 
   h3 {
     font-size: $h3Size;
+    margin-bottom: 5px;
   }
+}
+
+.li-with-icon {
+  margin-left: 2em;
+  list-style-type: none;
+
+  &:before {
+      text-indent: -2em;
+      text-align: center;
+  }
+}
+
+#lselect>ul>li {
+  @extend .li-with-icon;
+  @include icon("\f06c");
+}
+
+#larchives>ul>li {
+  @extend .li-with-icon;
+
+  &:nth-child(1) {
+    @include icon("\f051");
+  }
+
+  &:nth-child(2) {
+    @include icon("\f048");
+  }
+
+  &:nth-child(3) {
+    @include icon("\f07c");
+  }
+}
+
+#lresources>ul>li {
+  @extend .li-with-icon;
+  @include icon("\f02e");
 }
 
 #extraDiv1 {
@@ -178,9 +217,4 @@ h3 {
   margin-left: $hlstart;
   width: $hl1width + $hl2width;
   z-index: -2;
-}
-
-#lresources>ul>li {
-  display: block;
-  @include icon("\f02e");
 }

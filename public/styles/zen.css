@@ -48,13 +48,13 @@ h1, h2, h3 {
   font-family: Helvetica, sans-serif; }
 
 h1 {
-  font-size: 46px; }
+  font-size: 48px; }
 
 h2 {
-  font-size: 26px; }
+  font-size: 28px; }
 
 h3 {
-  font-size: 26px; }
+  font-size: 28px; }
 
 #container {
   width: 960px;
@@ -86,9 +86,9 @@ h3 {
   margin-right: 60px;
   z-index: 10;
   background: #0266ca;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
-  padding: 0 0 0 20px;
+  padding: 0 10px 0 20px;
   -webkit-border-radius: 0 0 2em 2em;
   -moz-border-radius: 0 0 2em 2em;
   -ms-border-radius: 0 0 2em 2em;
@@ -105,7 +105,7 @@ h3 {
   -ms-transition: height 2s ease 0.5s;
   -o-transition: height 2s ease 0.5s;
   transition: height 2s ease 0.5s;
-  height: 65px;
+  height: 85px;
   overflow: hidden; }
   #quickSummary:hover {
     -webkit-transition: height 2s ease 0.5s;
@@ -115,11 +115,13 @@ h3 {
     transition: height 2s ease 0.5s;
     height: 175px; }
   #quickSummary > .p2 {
-    font-size: 26px;
+    font-size: 28px;
+    font-family: Helvetica, sans-serif;
     display: block;
     float: left;
     width: 400px;
-    margin-left: 15px; }
+    margin-left: 15px;
+    margin-top: 10px; }
     #quickSummary > .p2:before {
       font-family: FontAwesome;
       font-size: 50px;
@@ -158,22 +160,68 @@ h3 {
   display: inline;
   float: left;
   margin-left: 0;
-  width: 239px; }
+  width: 260px; }
 
 #linkList2 {
   padding: 10px 1px 10px 20px; }
   #linkList2:before {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     font-family: Helvetica, sans-serif;
     content: "Links"; }
   #linkList2 > div {
-    width: 209px;
+    width: 230px;
     margin-bottom: 15px; }
     #linkList2 > div:first-child {
       margin-top: 15px; }
   #linkList2 h3 {
-    font-size: 16px; }
+    font-size: 18px;
+    margin-bottom: 5px; }
+
+.li-with-icon, #lselect > ul > li, #larchives > ul > li, #lresources > ul > li {
+  margin-left: 2em;
+  list-style-type: none; }
+  .li-with-icon:before, #lselect > ul > li:before, #larchives > ul > li:before, #lresources > ul > li:before {
+    text-indent: -2em;
+    text-align: center; }
+
+#lselect > ul > li:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\f06c"; }
+
+#larchives > ul > li:nth-child(1):before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\f051"; }
+#larchives > ul > li:nth-child(2):before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\f048"; }
+#larchives > ul > li:nth-child(3):before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\f07c"; }
+
+#lresources > ul > li:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  content: "\f02e"; }
 
 #extraDiv1 {
   background-color: #ccddff;
@@ -185,7 +233,7 @@ h3 {
   position: fixed;
   top: 0;
   bottom: 0;
-  margin-left: 25%;
+  margin-left: 10%;
   width: 130px;
   z-index: -1; }
 
@@ -194,16 +242,6 @@ h3 {
   position: fixed;
   top: 0;
   bottom: 0;
-  margin-left: 25%;
+  margin-left: 10%;
   width: 210px;
   z-index: -2; }
-
-#lresources > ul > li {
-  display: block; }
-  #lresources > ul > li:before {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    content: "\f02e"; }
